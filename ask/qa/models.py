@@ -1,22 +1,24 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils import timezone
+import datetime
 
 # Create your models here.
 
 class Question(models.Model):
     title = models.CharField(max_length=50)
     text = models.CharField(max_length=100)
-    added_at = models.DateField()
-    rating = models.IntegerField()
+    added_at = models.DateField(auto_now_add=True, blank=False)
+    rating = models.IntegerField(default=0)
     author = models.CharField(max_length=20)
     likes = models.ForeignKey(User)
-    def __str__(self):              
+    def __unicode__(self):              
         return self.title
 
 class Answer(models.Model):
     text = models.CharField(max_length=100)
-    added_at = models.DateField()
+    added_at = models.DateField(auto_now_add=True, blank=False)
     question = models.ForeignKey(Question)
     author = models.CharField(max_length=20)
-    def __str__(self):              # __unicode__ on Python 2
+    def __unicode__(self):              # __unicode__ on Python 2
         return self.text
