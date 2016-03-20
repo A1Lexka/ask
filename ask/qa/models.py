@@ -10,10 +10,13 @@ class Question(models.Model):
     rating = models.IntegerField()
     author = models.CharField(max_length=20)
     likes = models.ForeignKey(User)
+    def __str__(self):              
+        return self.title
 
 class Answer(models.Model):
     text = models.CharField(max_length=100)
     added_at = models.DateField()
-    question = models.OneToOneField(Question)
+    question = models.ForeignKey(Question)
     author = models.CharField(max_length=20)
-
+    def __str__(self):              # __unicode__ on Python 2
+        return self.text
