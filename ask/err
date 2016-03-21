@@ -163,10 +163,10 @@
     </tr>
     <tr>
       <th>Python Path:</th>
-      <td><pre>[&#39;/home/box/ask/ask&#39;,
- &#39;/home/box/ask&#39;,
+      <td><pre>[&#39;/home/box/web/ask/ask&#39;,
+ &#39;/home/box/web/ask&#39;,
  &#39;/usr/bin&#39;,
- &#39;/home/box/ask&#39;,
+ &#39;/home/box/web/ask&#39;,
  &#39;/usr/lib/python2.7&#39;,
  &#39;/usr/lib/python2.7/plat-x86_64-linux-gnu&#39;,
  &#39;/usr/lib/python2.7/lib-tk&#39;,
@@ -177,7 +177,7 @@
     </tr>
     <tr>
       <th>Server time:</th>
-      <td>Sun, 20 Mar 2016 22:09:52 +0000</td>
+      <td>Mon, 21 Mar 2016 10:15:52 +0000</td>
     </tr>
   </table>
 </div>
@@ -217,13 +217,13 @@
           <code>/usr/lib/python2.7/dist-packages/django/core/handlers/base.py</code> in <code>get_response</code>
 
           
-            <div class="context" id="c140141029828944">
+            <div class="context" id="c139980308342544">
               
-                <ol start="105" class="pre-context" id="pre140141029828944"><li onclick="toggle('pre140141029828944', 'post140141029828944')"><pre>                    response = middleware_method(request, callback, callback_args, callback_kwargs)</pre></li><li onclick="toggle('pre140141029828944', 'post140141029828944')"><pre>                    if response:</pre></li><li onclick="toggle('pre140141029828944', 'post140141029828944')"><pre>                        break</pre></li><li onclick="toggle('pre140141029828944', 'post140141029828944')"><pre></pre></li><li onclick="toggle('pre140141029828944', 'post140141029828944')"><pre>            if response is None:</pre></li><li onclick="toggle('pre140141029828944', 'post140141029828944')"><pre>                wrapped_callback = self.make_view_atomic(callback)</pre></li><li onclick="toggle('pre140141029828944', 'post140141029828944')"><pre>                try:</pre></li></ol>
+                <ol start="105" class="pre-context" id="pre139980308342544"><li onclick="toggle('pre139980308342544', 'post139980308342544')"><pre>                    response = middleware_method(request, callback, callback_args, callback_kwargs)</pre></li><li onclick="toggle('pre139980308342544', 'post139980308342544')"><pre>                    if response:</pre></li><li onclick="toggle('pre139980308342544', 'post139980308342544')"><pre>                        break</pre></li><li onclick="toggle('pre139980308342544', 'post139980308342544')"><pre></pre></li><li onclick="toggle('pre139980308342544', 'post139980308342544')"><pre>            if response is None:</pre></li><li onclick="toggle('pre139980308342544', 'post139980308342544')"><pre>                wrapped_callback = self.make_view_atomic(callback)</pre></li><li onclick="toggle('pre139980308342544', 'post139980308342544')"><pre>                try:</pre></li></ol>
               
-              <ol start="112" class="context-line"><li onclick="toggle('pre140141029828944', 'post140141029828944')"><pre>                    response = wrapped_callback(request, *callback_args, **callback_kwargs)</pre> <span>...</span></li></ol>
+              <ol start="112" class="context-line"><li onclick="toggle('pre139980308342544', 'post139980308342544')"><pre>                    response = wrapped_callback(request, *callback_args, **callback_kwargs)</pre> <span>...</span></li></ol>
               
-                <ol start='113' class="post-context" id="post140141029828944"><li onclick="toggle('pre140141029828944', 'post140141029828944')"><pre>                except Exception as e:</pre></li><li onclick="toggle('pre140141029828944', 'post140141029828944')"><pre>                    # If the view raised an exception, run it through exception</pre></li><li onclick="toggle('pre140141029828944', 'post140141029828944')"><pre>                    # middleware, and if the exception middleware returns a</pre></li><li onclick="toggle('pre140141029828944', 'post140141029828944')"><pre>                    # response, use that. Otherwise, reraise the exception.</pre></li><li onclick="toggle('pre140141029828944', 'post140141029828944')"><pre>                    for middleware_method in self._exception_middleware:</pre></li><li onclick="toggle('pre140141029828944', 'post140141029828944')"><pre>                        response = middleware_method(request, e)</pre></li></ol>
+                <ol start='113' class="post-context" id="post139980308342544"><li onclick="toggle('pre139980308342544', 'post139980308342544')"><pre>                except Exception as e:</pre></li><li onclick="toggle('pre139980308342544', 'post139980308342544')"><pre>                    # If the view raised an exception, run it through exception</pre></li><li onclick="toggle('pre139980308342544', 'post139980308342544')"><pre>                    # middleware, and if the exception middleware returns a</pre></li><li onclick="toggle('pre139980308342544', 'post139980308342544')"><pre>                    # response, use that. Otherwise, reraise the exception.</pre></li><li onclick="toggle('pre139980308342544', 'post139980308342544')"><pre>                    for middleware_method in self._exception_middleware:</pre></li><li onclick="toggle('pre139980308342544', 'post139980308342544')"><pre>                        response = middleware_method(request, e)</pre></li></ol>
               
             </div>
           
@@ -231,10 +231,10 @@
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '140141029828944')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '139980308342544')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v140141029828944">
+            <table class="vars" id="v139980308342544">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -255,32 +255,32 @@
                 
                   <tr>
                     <td>resolver_match</td>
-                    <td class="code"><pre>ResolverMatch(func=&lt;function questions_all at 0x7f752058a6e0&gt;, args=(), kwargs={}, url_name=&#39;questions_all&#39;, app_name=&#39;None&#39;, namespace=&#39;&#39;)</pre></td>
+                    <td class="code"><pre>ResolverMatch(func=&lt;function questions_all at 0x7f4fb49aa848&gt;, args=(), kwargs={}, url_name=&#39;questions_all&#39;, app_name=&#39;None&#39;, namespace=&#39;&#39;)</pre></td>
                   </tr>
                 
                   <tr>
                     <td>middleware_method</td>
-                    <td class="code"><pre>&lt;bound method CsrfViewMiddleware.process_view of &lt;django.middleware.csrf.CsrfViewMiddleware object at 0x7f752117f1d0&gt;&gt;</pre></td>
+                    <td class="code"><pre>&lt;bound method CsrfViewMiddleware.process_view of &lt;django.middleware.csrf.CsrfViewMiddleware object at 0x7f4fb532e150&gt;&gt;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>self</td>
-                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f7521ae3d10&gt;</pre></td>
+                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f4fb5c90c50&gt;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>request</td>
-                    <td class="code"><pre>&quot;&lt;WSGIRequest\npath:/,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {}&gt;,\nCOOKIES:{},\nMETA:{u&#39;CSRF_COOKIE&#39;: u&#39;wow72qLwJOcQpcJiVhPYnnPnKwKUQ2s4&#39;,\n &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,\n &#39;HTTP_HOST&#39;: &#39;127.0.0.1:8000&#39;,\n &#39;HTTP_USER_AGENT&#39;: &#39;curl/7.35.0&#39;,\n &#39;PATH_INFO&#39;: u&#39;/&#39;,\n &#39;QUERY_STRING&#39;: &#39;&#39;,\n &#39;RAW_URI&#39;: &#39;/&#39;,\n &#39;REMOTE_ADDR&#39;: &#39;127.0.0.1&#39;,\n &#39;REMOTE_PORT&#39;: &#39;55643&#39;,\n &#39;REQUEST_METHOD&#39;: &#39;GET&#39;,\n &#39;SCRIPT_NAME&#39;: u&#39;&#39;,\n &#39;SERVER_NAME&#39;: &#39;127.0.0.1&#39;,\n &#39;SERVER_PORT&#39;: &#39;8000&#39;,\n &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,\n &#39;SERVER_SOFTWARE&#39;: &#39;gunicorn/17.5&#39;,\n &#39;gunicorn.socket&#39;: &lt;socket._socketobject object at 0x7f75212a8590&gt;,\n &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f7524a691e0&gt;,\n &#39;wsgi.file_wrapper&#39;: &lt;class gunicorn.http.wsgi.FileWrapper at 0x7f7521ad21f0&gt;,\n &#39;wsgi.input&#39;: &lt;gunicorn.http.body.Body object at 0x7f75211bc590&gt;,\n &#39;wsgi.multiprocess&#39;: True,\n &#39;wsgi.multithread&#39;: False,\n &#39;wsgi.run_once&#39;: False,\n &#39;wsgi.url_scheme&#39;: &#39;http&#39;,\n &#39;wsgi.version&#39;: (1, 0)}&gt;&quot;</pre></td>
+                    <td class="code"><pre>&quot;&lt;WSGIRequest\npath:/,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {}&gt;,\nCOOKIES:{},\nMETA:{u&#39;CSRF_COOKIE&#39;: u&#39;8tHmaNb5h58KOhlnGB2vuPiu5Ygihad9&#39;,\n &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,\n &#39;HTTP_HOST&#39;: &#39;127.0.0.1:8000&#39;,\n &#39;HTTP_USER_AGENT&#39;: &#39;curl/7.35.0&#39;,\n &#39;PATH_INFO&#39;: u&#39;/&#39;,\n &#39;QUERY_STRING&#39;: &#39;&#39;,\n &#39;RAW_URI&#39;: &#39;/&#39;,\n &#39;REMOTE_ADDR&#39;: &#39;127.0.0.1&#39;,\n &#39;REMOTE_PORT&#39;: &#39;52667&#39;,\n &#39;REQUEST_METHOD&#39;: &#39;GET&#39;,\n &#39;SCRIPT_NAME&#39;: u&#39;&#39;,\n &#39;SERVER_NAME&#39;: &#39;127.0.0.1&#39;,\n &#39;SERVER_PORT&#39;: &#39;8000&#39;,\n &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,\n &#39;SERVER_SOFTWARE&#39;: &#39;gunicorn/17.5&#39;,\n &#39;gunicorn.socket&#39;: &lt;socket._socketobject object at 0x7f4fb5455590&gt;,\n &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f4fb8c161e0&gt;,\n &#39;wsgi.file_wrapper&#39;: &lt;class gunicorn.http.wsgi.FileWrapper at 0x7f4fb5c7e1f0&gt;,\n &#39;wsgi.input&#39;: &lt;gunicorn.http.body.Body object at 0x7f4fb53695d0&gt;,\n &#39;wsgi.multiprocess&#39;: True,\n &#39;wsgi.multithread&#39;: False,\n &#39;wsgi.run_once&#39;: False,\n &#39;wsgi.url_scheme&#39;: &#39;http&#39;,\n &#39;wsgi.version&#39;: (1, 0)}&gt;&quot;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>callback</td>
-                    <td class="code"><pre>&lt;function questions_all at 0x7f752058a6e0&gt;</pre></td>
+                    <td class="code"><pre>&lt;function questions_all at 0x7f4fb49aa848&gt;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>wrapped_callback</td>
-                    <td class="code"><pre>&lt;function questions_all at 0x7f752058a6e0&gt;</pre></td>
+                    <td class="code"><pre>&lt;function questions_all at 0x7f4fb49aa848&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -309,16 +309,16 @@
         </li>
       
         <li class="frame user">
-          <code>/home/box/ask/qa/views.py</code> in <code>questions_all</code>
+          <code>/home/box/web/ask/qa/views.py</code> in <code>questions_all</code>
 
           
-            <div class="context" id="c140141029829088">
+            <div class="context" id="c139980308342688">
               
-                <ol start="15" class="pre-context" id="pre140141029829088"><li onclick="toggle('pre140141029829088', 'post140141029829088')"><pre>    page = request.GET.get(&#39;page&#39;, 1)</pre></li><li onclick="toggle('pre140141029829088', 'post140141029829088')"><pre>    paginator = Paginator(questions, limit)</pre></li><li onclick="toggle('pre140141029829088', 'post140141029829088')"><pre>    paginator.baseurl = &#39;/?page=&#39;</pre></li><li onclick="toggle('pre140141029829088', 'post140141029829088')"><pre>    page = paginator.page(page)   </pre></li><li onclick="toggle('pre140141029829088', 'post140141029829088')"><pre>    return render(request, &#39;qa/all.html&#39;, {</pre></li><li onclick="toggle('pre140141029829088', 'post140141029829088')"><pre>        &#39;questions&#39;: page.object_list,</pre></li><li onclick="toggle('pre140141029829088', 'post140141029829088')"><pre>    #    &#39;title&#39;: question.title,</pre></li></ol>
+                <ol start="15" class="pre-context" id="pre139980308342688"><li onclick="toggle('pre139980308342688', 'post139980308342688')"><pre>    page = request.GET.get(&#39;page&#39;, 1)</pre></li><li onclick="toggle('pre139980308342688', 'post139980308342688')"><pre>    paginator = Paginator(questions, limit)</pre></li><li onclick="toggle('pre139980308342688', 'post139980308342688')"><pre>    paginator.baseurl = &#39;/?page=&#39;</pre></li><li onclick="toggle('pre139980308342688', 'post139980308342688')"><pre>    page = paginator.page(page)   </pre></li><li onclick="toggle('pre139980308342688', 'post139980308342688')"><pre>    return render(request, &#39;qa/all.html&#39;, {</pre></li><li onclick="toggle('pre139980308342688', 'post139980308342688')"><pre>        &#39;questions&#39;: page.object_list,</pre></li><li onclick="toggle('pre139980308342688', 'post139980308342688')"><pre>    #    &#39;title&#39;: question.title,</pre></li></ol>
               
-              <ol start="22" class="context-line"><li onclick="toggle('pre140141029829088', 'post140141029829088')"><pre>        &#39;paginator&#39;: paginator, &#39;page&#39;: page})</pre> <span>...</span></li></ol>
+              <ol start="22" class="context-line"><li onclick="toggle('pre139980308342688', 'post139980308342688')"><pre>        &#39;paginator&#39;: paginator, &#39;page&#39;: page})</pre> <span>...</span></li></ol>
               
-                <ol start='23' class="post-context" id="post140141029829088"><li onclick="toggle('pre140141029829088', 'post140141029829088')"><pre></pre></li><li onclick="toggle('pre140141029829088', 'post140141029829088')"><pre>#WORKING</pre></li><li onclick="toggle('pre140141029829088', 'post140141029829088')"><pre>#def questions_all(request):</pre></li><li onclick="toggle('pre140141029829088', 'post140141029829088')"><pre>#    questions = Question.objects.all()</pre></li><li onclick="toggle('pre140141029829088', 'post140141029829088')"><pre>#    return render(request, &#39;qa/all.html&#39;, {&#39;questions&#39;: questions})</pre></li><li onclick="toggle('pre140141029829088', 'post140141029829088')"><pre></pre></li></ol>
+                <ol start='23' class="post-context" id="post139980308342688"><li onclick="toggle('pre139980308342688', 'post139980308342688')"><pre></pre></li><li onclick="toggle('pre139980308342688', 'post139980308342688')"><pre>#WORKING</pre></li><li onclick="toggle('pre139980308342688', 'post139980308342688')"><pre>#def questions_all(request):</pre></li><li onclick="toggle('pre139980308342688', 'post139980308342688')"><pre>#    questions = Question.objects.all()</pre></li><li onclick="toggle('pre139980308342688', 'post139980308342688')"><pre>#    return render(request, &#39;qa/all.html&#39;, {&#39;questions&#39;: questions})</pre></li><li onclick="toggle('pre139980308342688', 'post139980308342688')"><pre></pre></li></ol>
               
             </div>
           
@@ -326,10 +326,10 @@
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '140141029829088')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '139980308342688')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v140141029829088">
+            <table class="vars" id="v139980308342688">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -340,7 +340,7 @@
                 
                   <tr>
                     <td>paginator</td>
-                    <td class="code"><pre>&lt;django.core.paginator.Paginator object at 0x7f75205182d0&gt;</pre></td>
+                    <td class="code"><pre>&lt;django.core.paginator.Paginator object at 0x7f4fb4923dd0&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -350,17 +350,17 @@
                 
                   <tr>
                     <td>request</td>
-                    <td class="code"><pre>&quot;&lt;WSGIRequest\npath:/,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {}&gt;,\nCOOKIES:{},\nMETA:{u&#39;CSRF_COOKIE&#39;: u&#39;wow72qLwJOcQpcJiVhPYnnPnKwKUQ2s4&#39;,\n &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,\n &#39;HTTP_HOST&#39;: &#39;127.0.0.1:8000&#39;,\n &#39;HTTP_USER_AGENT&#39;: &#39;curl/7.35.0&#39;,\n &#39;PATH_INFO&#39;: u&#39;/&#39;,\n &#39;QUERY_STRING&#39;: &#39;&#39;,\n &#39;RAW_URI&#39;: &#39;/&#39;,\n &#39;REMOTE_ADDR&#39;: &#39;127.0.0.1&#39;,\n &#39;REMOTE_PORT&#39;: &#39;55643&#39;,\n &#39;REQUEST_METHOD&#39;: &#39;GET&#39;,\n &#39;SCRIPT_NAME&#39;: u&#39;&#39;,\n &#39;SERVER_NAME&#39;: &#39;127.0.0.1&#39;,\n &#39;SERVER_PORT&#39;: &#39;8000&#39;,\n &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,\n &#39;SERVER_SOFTWARE&#39;: &#39;gunicorn/17.5&#39;,\n &#39;gunicorn.socket&#39;: &lt;socket._socketobject object at 0x7f75212a8590&gt;,\n &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f7524a691e0&gt;,\n &#39;wsgi.file_wrapper&#39;: &lt;class gunicorn.http.wsgi.FileWrapper at 0x7f7521ad21f0&gt;,\n &#39;wsgi.input&#39;: &lt;gunicorn.http.body.Body object at 0x7f75211bc590&gt;,\n &#39;wsgi.multiprocess&#39;: True,\n &#39;wsgi.multithread&#39;: False,\n &#39;wsgi.run_once&#39;: False,\n &#39;wsgi.url_scheme&#39;: &#39;http&#39;,\n &#39;wsgi.version&#39;: (1, 0)}&gt;&quot;</pre></td>
+                    <td class="code"><pre>&quot;&lt;WSGIRequest\npath:/,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {}&gt;,\nCOOKIES:{},\nMETA:{u&#39;CSRF_COOKIE&#39;: u&#39;8tHmaNb5h58KOhlnGB2vuPiu5Ygihad9&#39;,\n &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,\n &#39;HTTP_HOST&#39;: &#39;127.0.0.1:8000&#39;,\n &#39;HTTP_USER_AGENT&#39;: &#39;curl/7.35.0&#39;,\n &#39;PATH_INFO&#39;: u&#39;/&#39;,\n &#39;QUERY_STRING&#39;: &#39;&#39;,\n &#39;RAW_URI&#39;: &#39;/&#39;,\n &#39;REMOTE_ADDR&#39;: &#39;127.0.0.1&#39;,\n &#39;REMOTE_PORT&#39;: &#39;52667&#39;,\n &#39;REQUEST_METHOD&#39;: &#39;GET&#39;,\n &#39;SCRIPT_NAME&#39;: u&#39;&#39;,\n &#39;SERVER_NAME&#39;: &#39;127.0.0.1&#39;,\n &#39;SERVER_PORT&#39;: &#39;8000&#39;,\n &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,\n &#39;SERVER_SOFTWARE&#39;: &#39;gunicorn/17.5&#39;,\n &#39;gunicorn.socket&#39;: &lt;socket._socketobject object at 0x7f4fb5455590&gt;,\n &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f4fb8c161e0&gt;,\n &#39;wsgi.file_wrapper&#39;: &lt;class gunicorn.http.wsgi.FileWrapper at 0x7f4fb5c7e1f0&gt;,\n &#39;wsgi.input&#39;: &lt;gunicorn.http.body.Body object at 0x7f4fb53695d0&gt;,\n &#39;wsgi.multiprocess&#39;: True,\n &#39;wsgi.multithread&#39;: False,\n &#39;wsgi.run_once&#39;: False,\n &#39;wsgi.url_scheme&#39;: &#39;http&#39;,\n &#39;wsgi.version&#39;: (1, 0)}&gt;&quot;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>page</td>
-                    <td class="code"><pre>&lt;Page 1 of 1&gt;</pre></td>
+                    <td class="code"><pre>&lt;Page 1 of 4&gt;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>questions</td>
-                    <td class="code"><pre>[]</pre></td>
+                    <td class="code"><pre>[&lt;Question: question about pi&gt;, &lt;Question: question last&gt;, &lt;Question: question 29&gt;, &lt;Question: question 28&gt;, &lt;Question: question 27&gt;, &lt;Question: question 26&gt;, &lt;Question: question 25&gt;, &lt;Question: question 24&gt;, &lt;Question: question 23&gt;, &lt;Question: question 22&gt;, &lt;Question: question 21&gt;, &lt;Question: question 20&gt;, &lt;Question: question 19&gt;, &lt;Question: question 18&gt;, &lt;Question: question 17&gt;, &lt;Question: question 16&gt;, &lt;Question: question 15&gt;, &lt;Question: question 14&gt;, &lt;Question: question 13&gt;, &lt;Question: question 12&gt;, &#39;...(remaining elements truncated)...&#39;]</pre></td>
                   </tr>
                 
               </tbody>
@@ -372,13 +372,13 @@
           <code>/usr/lib/python2.7/dist-packages/django/shortcuts/__init__.py</code> in <code>render</code>
 
           
-            <div class="context" id="c140141029829160">
+            <div class="context" id="c139980308342760">
               
-                <ol start="46" class="pre-context" id="pre140141029829160"><li onclick="toggle('pre140141029829160', 'post140141029829160')"><pre>                             &#39;set its current_app before calling render()&#39;)</pre></li><li onclick="toggle('pre140141029829160', 'post140141029829160')"><pre>    else:</pre></li><li onclick="toggle('pre140141029829160', 'post140141029829160')"><pre>        current_app = kwargs.pop(&#39;current_app&#39;, None)</pre></li><li onclick="toggle('pre140141029829160', 'post140141029829160')"><pre>        context_instance = RequestContext(request, current_app=current_app)</pre></li><li onclick="toggle('pre140141029829160', 'post140141029829160')"><pre></pre></li><li onclick="toggle('pre140141029829160', 'post140141029829160')"><pre>    kwargs[&#39;context_instance&#39;] = context_instance</pre></li><li onclick="toggle('pre140141029829160', 'post140141029829160')"><pre></pre></li></ol>
+                <ol start="46" class="pre-context" id="pre139980308342760"><li onclick="toggle('pre139980308342760', 'post139980308342760')"><pre>                             &#39;set its current_app before calling render()&#39;)</pre></li><li onclick="toggle('pre139980308342760', 'post139980308342760')"><pre>    else:</pre></li><li onclick="toggle('pre139980308342760', 'post139980308342760')"><pre>        current_app = kwargs.pop(&#39;current_app&#39;, None)</pre></li><li onclick="toggle('pre139980308342760', 'post139980308342760')"><pre>        context_instance = RequestContext(request, current_app=current_app)</pre></li><li onclick="toggle('pre139980308342760', 'post139980308342760')"><pre></pre></li><li onclick="toggle('pre139980308342760', 'post139980308342760')"><pre>    kwargs[&#39;context_instance&#39;] = context_instance</pre></li><li onclick="toggle('pre139980308342760', 'post139980308342760')"><pre></pre></li></ol>
               
-              <ol start="53" class="context-line"><li onclick="toggle('pre140141029829160', 'post140141029829160')"><pre>    return HttpResponse(loader.render_to_string(*args, **kwargs),</pre> <span>...</span></li></ol>
+              <ol start="53" class="context-line"><li onclick="toggle('pre139980308342760', 'post139980308342760')"><pre>    return HttpResponse(loader.render_to_string(*args, **kwargs),</pre> <span>...</span></li></ol>
               
-                <ol start='54' class="post-context" id="post140141029829160"><li onclick="toggle('pre140141029829160', 'post140141029829160')"><pre>                        **httpresponse_kwargs)</pre></li><li onclick="toggle('pre140141029829160', 'post140141029829160')"><pre></pre></li><li onclick="toggle('pre140141029829160', 'post140141029829160')"><pre>def redirect(to, *args, **kwargs):</pre></li><li onclick="toggle('pre140141029829160', 'post140141029829160')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre140141029829160', 'post140141029829160')"><pre>    Returns an HttpResponseRedirect to the appropriate URL for the arguments</pre></li><li onclick="toggle('pre140141029829160', 'post140141029829160')"><pre>    passed.</pre></li></ol>
+                <ol start='54' class="post-context" id="post139980308342760"><li onclick="toggle('pre139980308342760', 'post139980308342760')"><pre>                        **httpresponse_kwargs)</pre></li><li onclick="toggle('pre139980308342760', 'post139980308342760')"><pre></pre></li><li onclick="toggle('pre139980308342760', 'post139980308342760')"><pre>def redirect(to, *args, **kwargs):</pre></li><li onclick="toggle('pre139980308342760', 'post139980308342760')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre139980308342760', 'post139980308342760')"><pre>    Returns an HttpResponseRedirect to the appropriate URL for the arguments</pre></li><li onclick="toggle('pre139980308342760', 'post139980308342760')"><pre>    passed.</pre></li></ol>
               
             </div>
           
@@ -386,10 +386,10 @@
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '140141029829160')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '139980308342760')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v140141029829160">
+            <table class="vars" id="v139980308342760">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -411,24 +411,24 @@
                   <tr>
                     <td>args</td>
                     <td class="code"><pre>(&#39;qa/all.html&#39;,
- {&#39;page&#39;: &lt;Page 1 of 1&gt;,
-  &#39;paginator&#39;: &lt;django.core.paginator.Paginator object at 0x7f75205182d0&gt;,
-  &#39;questions&#39;: []})</pre></td>
+ {&#39;page&#39;: &lt;Page 1 of 4&gt;,
+  &#39;paginator&#39;: &lt;django.core.paginator.Paginator object at 0x7f4fb4923dd0&gt;,
+  &#39;questions&#39;: [&lt;Question: question about pi&gt;, &lt;Question: question last&gt;, &lt;Question: question 29&gt;, &lt;Question: question 28&gt;, &lt;Question: question 27&gt;, &lt;Question: question 26&gt;, &lt;Question: question 25&gt;, &lt;Question: question 24&gt;, &lt;Question: question 23&gt;, &lt;Question: question 22&gt;]})</pre></td>
                   </tr>
                 
                   <tr>
                     <td>request</td>
-                    <td class="code"><pre>&quot;&lt;WSGIRequest\npath:/,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {}&gt;,\nCOOKIES:{},\nMETA:{u&#39;CSRF_COOKIE&#39;: u&#39;wow72qLwJOcQpcJiVhPYnnPnKwKUQ2s4&#39;,\n &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,\n &#39;HTTP_HOST&#39;: &#39;127.0.0.1:8000&#39;,\n &#39;HTTP_USER_AGENT&#39;: &#39;curl/7.35.0&#39;,\n &#39;PATH_INFO&#39;: u&#39;/&#39;,\n &#39;QUERY_STRING&#39;: &#39;&#39;,\n &#39;RAW_URI&#39;: &#39;/&#39;,\n &#39;REMOTE_ADDR&#39;: &#39;127.0.0.1&#39;,\n &#39;REMOTE_PORT&#39;: &#39;55643&#39;,\n &#39;REQUEST_METHOD&#39;: &#39;GET&#39;,\n &#39;SCRIPT_NAME&#39;: u&#39;&#39;,\n &#39;SERVER_NAME&#39;: &#39;127.0.0.1&#39;,\n &#39;SERVER_PORT&#39;: &#39;8000&#39;,\n &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,\n &#39;SERVER_SOFTWARE&#39;: &#39;gunicorn/17.5&#39;,\n &#39;gunicorn.socket&#39;: &lt;socket._socketobject object at 0x7f75212a8590&gt;,\n &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f7524a691e0&gt;,\n &#39;wsgi.file_wrapper&#39;: &lt;class gunicorn.http.wsgi.FileWrapper at 0x7f7521ad21f0&gt;,\n &#39;wsgi.input&#39;: &lt;gunicorn.http.body.Body object at 0x7f75211bc590&gt;,\n &#39;wsgi.multiprocess&#39;: True,\n &#39;wsgi.multithread&#39;: False,\n &#39;wsgi.run_once&#39;: False,\n &#39;wsgi.url_scheme&#39;: &#39;http&#39;,\n &#39;wsgi.version&#39;: (1, 0)}&gt;&quot;</pre></td>
+                    <td class="code"><pre>&quot;&lt;WSGIRequest\npath:/,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {}&gt;,\nCOOKIES:{},\nMETA:{u&#39;CSRF_COOKIE&#39;: u&#39;8tHmaNb5h58KOhlnGB2vuPiu5Ygihad9&#39;,\n &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,\n &#39;HTTP_HOST&#39;: &#39;127.0.0.1:8000&#39;,\n &#39;HTTP_USER_AGENT&#39;: &#39;curl/7.35.0&#39;,\n &#39;PATH_INFO&#39;: u&#39;/&#39;,\n &#39;QUERY_STRING&#39;: &#39;&#39;,\n &#39;RAW_URI&#39;: &#39;/&#39;,\n &#39;REMOTE_ADDR&#39;: &#39;127.0.0.1&#39;,\n &#39;REMOTE_PORT&#39;: &#39;52667&#39;,\n &#39;REQUEST_METHOD&#39;: &#39;GET&#39;,\n &#39;SCRIPT_NAME&#39;: u&#39;&#39;,\n &#39;SERVER_NAME&#39;: &#39;127.0.0.1&#39;,\n &#39;SERVER_PORT&#39;: &#39;8000&#39;,\n &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,\n &#39;SERVER_SOFTWARE&#39;: &#39;gunicorn/17.5&#39;,\n &#39;gunicorn.socket&#39;: &lt;socket._socketobject object at 0x7f4fb5455590&gt;,\n &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f4fb8c161e0&gt;,\n &#39;wsgi.file_wrapper&#39;: &lt;class gunicorn.http.wsgi.FileWrapper at 0x7f4fb5c7e1f0&gt;,\n &#39;wsgi.input&#39;: &lt;gunicorn.http.body.Body object at 0x7f4fb53695d0&gt;,\n &#39;wsgi.multiprocess&#39;: True,\n &#39;wsgi.multithread&#39;: False,\n &#39;wsgi.run_once&#39;: False,\n &#39;wsgi.url_scheme&#39;: &#39;http&#39;,\n &#39;wsgi.version&#39;: (1, 0)}&gt;&quot;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>context_instance</td>
-                    <td class="code"><pre>[{&#39;False&#39;: False, &#39;None&#39;: None, &#39;True&#39;: True}, {u&#39;csrf_token&#39;: &lt;django.utils.functional.__proxy__ object at 0x7f75204cf150&gt;}, {&#39;perms&#39;: &lt;django.contrib.auth.context_processors.PermWrapper object at 0x7f75204cf290&gt;, &#39;user&#39;: &lt;SimpleLazyObject: &lt;function &lt;lambda&gt; at 0x7f7520661e60&gt;&gt;}, {}, {u&#39;LANGUAGES&#39;: ((&#39;af&#39;, &#39;Afrikaans&#39;), (&#39;ar&#39;, &#39;Arabic&#39;), (&#39;az&#39;, &#39;Azerbaijani&#39;), (&#39;bg&#39;, &#39;Bulgarian&#39;), (&#39;be&#39;, &#39;Belarusian&#39;), (&#39;bn&#39;, &#39;Bengali&#39;), (&#39;br&#39;, &#39;Breton&#39;), (&#39;bs&#39;, &#39;Bosnian&#39;), (&#39;ca&#39;, &#39;Catalan&#39;), (&#39;cs&#39;, &#39;Czech&#39;), (&#39;cy&#39;, &#39;Welsh&#39;), (&#39;da&#39;, &#39;Danish&#39;), (&#39;de&#39;, &#39;German&#39;), (&#39;el&#39;, &#39;Greek&#39;), (&#39;en&#39;, &#39;English&#39;), (&#39;en-gb&#39;, &#39;British English&#39;), (&#39;eo&#39;, &#39;Esperanto&#39;), (&#39;es&#39;, &#39;Spanish&#39;), (&#39;es-ar&#39;, &#39;Argentinian Spanish&#39;), (&#39;es-mx&#39;, &#39;Mexican Spanish&#39;), (&#39;es-ni&#39;, &#39;Nicaraguan Spanish&#39;), (&#39;es-ve&#39;, &#39;Venezuelan Spanish&#39;), (&#39;et&#39;, &#39;Estonian&#39;), (&#39;eu&#39;, &#39;Basque&#39;), (&#39;fa&#39;, &#39;Persian&#39;), (&#39;fi&#39;, &#39;Finnish&#39;), (&#39;fr&#39;, &#39;French&#39;), (&#39;fy-nl&#39;, &#39;Frisian&#39;), (&#39;ga&#39;, &#39;Irish&#39;), (&#39;gl&#39;, &#39;Galician&#39;), (&#39;he&#39;, &#39;Hebrew&#39;), (&#39;hi&#39;, &#39;Hindi&#39;), (&#39;hr&#39;, &#39;Croatian&#39;), (&#39;hu&#39;, &#39;Hungarian&#39;), (&#39;ia&#39;, &#39;Interlingua&#39;), (&#39;id&#39;, &#39;Indonesian&#39;), (&#39;is&#39;, &#39;Icelandic&#39;), (&#39;it&#39;, &#39;Italian&#39;), (&#39;ja&#39;, &#39;Japanese&#39;), (&#39;ka&#39;, &#39;Georgian&#39;), (&#39;kk&#39;, &#39;Kazakh&#39;), (&#39;km&#39;, &#39;Khmer&#39;), (&#39;kn&#39;, &#39;Kannada&#39;), (&#39;ko&#39;, &#39;Korean&#39;), (&#39;lb&#39;, &#39;Luxembourgish&#39;), (&#39;lt&#39;, &#39;Lithuanian&#39;), (&#39;lv&#39;, &#39;Latvian&#39;), (&#39;mk&#39;, &#39;Macedonian&#39;), (&#39;ml&#39;, &#39;Malayalam&#39;), (&#39;mn&#39;, &#39;Mongolian&#39;), (&#39;my&#39;, &#39;Burmese&#39;), (&#39;nb&#39;, &#39;Norwegian Bokmal&#39;), (&#39;ne&#39;, &#39;Nepali&#39;), (&#39;nl&#39;, &#39;Dutch&#39;), (&#39;nn&#39;, &#39;Norwegian Nynorsk&#39;), (&#39;os&#39;, &#39;Ossetic&#39;), (&#39;pa&#39;, &#39;Punjabi&#39;), (&#39;pl&#39;, &#39;Polish&#39;), (&#39;pt&#39;, &#39;Portuguese&#39;), (&#39;pt-br&#39;, &#39;Brazilian Portuguese&#39;), (&#39;ro&#39;, &#39;Romanian&#39;), (&#39;ru&#39;, &#39;Russian&#39;), (&#39;sk&#39;, &#39;Slovak&#39;), (&#39;sl&#39;, &#39;Slovenian&#39;), (&#39;sq&#39;, &#39;Albanian&#39;), (&#39;sr&#39;, &#39;Serbian&#39;), (&#39;sr-latn&#39;, &#39;Serbian Latin&#39;), (&#39;sv&#39;, &#39;Swedish&#39;), (&#39;sw&#39;, &#39;Swahili&#39;), (&#39;ta&#39;, &#39;Tamil&#39;), (&#39;te&#39;, &#39;Telugu&#39;), (&#39;th&#39;, &#39;Thai&#39;), (&#39;tr&#39;, &#39;Turkish&#39;), (&#39;tt&#39;, &#39;Tatar&#39;), (&#39;udm&#39;, &#39;Udmurt&#39;), (&#39;uk&#39;, &#39;Ukrainian&#39;), (&#39;ur&#39;, &#39;Urdu&#39;), (&#39;vi&#39;, &#39;Vietnamese&#39;), (&#39;zh-cn&#39;, &#39;Simplified Chinese&#39;), (&#39;zh-tw&#39;, &#39;Traditional Chinese&#39;)), u&#39;LANGUAGE_BIDI&#39;: False, u&#39;LANGUAGE_CODE&#39;: &#39;en-us&#39;}, {u&#39;MEDIA_URL&#39;: &#39;&#39;}, {u&#39;STATIC_URL&#39;: &#39;/static/&#39;}, {u&#39;TIME_ZONE&#39;: &#39;UTC&#39;}, {&#39;messages&#39;: &lt;django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f75205f23d0&gt;}]</pre></td>
+                    <td class="code"><pre>[{&#39;False&#39;: False, &#39;None&#39;: None, &#39;True&#39;: True}, {u&#39;csrf_token&#39;: &lt;django.utils.functional.__proxy__ object at 0x7f4fb48d94d0&gt;}, {&#39;perms&#39;: &lt;django.contrib.auth.context_processors.PermWrapper object at 0x7f4fb48d9610&gt;, &#39;user&#39;: &lt;SimpleLazyObject: &lt;function &lt;lambda&gt; at 0x7f4fb4a81a28&gt;&gt;}, {}, {u&#39;LANGUAGES&#39;: ((&#39;af&#39;, &#39;Afrikaans&#39;), (&#39;ar&#39;, &#39;Arabic&#39;), (&#39;az&#39;, &#39;Azerbaijani&#39;), (&#39;bg&#39;, &#39;Bulgarian&#39;), (&#39;be&#39;, &#39;Belarusian&#39;), (&#39;bn&#39;, &#39;Bengali&#39;), (&#39;br&#39;, &#39;Breton&#39;), (&#39;bs&#39;, &#39;Bosnian&#39;), (&#39;ca&#39;, &#39;Catalan&#39;), (&#39;cs&#39;, &#39;Czech&#39;), (&#39;cy&#39;, &#39;Welsh&#39;), (&#39;da&#39;, &#39;Danish&#39;), (&#39;de&#39;, &#39;German&#39;), (&#39;el&#39;, &#39;Greek&#39;), (&#39;en&#39;, &#39;English&#39;), (&#39;en-gb&#39;, &#39;British English&#39;), (&#39;eo&#39;, &#39;Esperanto&#39;), (&#39;es&#39;, &#39;Spanish&#39;), (&#39;es-ar&#39;, &#39;Argentinian Spanish&#39;), (&#39;es-mx&#39;, &#39;Mexican Spanish&#39;), (&#39;es-ni&#39;, &#39;Nicaraguan Spanish&#39;), (&#39;es-ve&#39;, &#39;Venezuelan Spanish&#39;), (&#39;et&#39;, &#39;Estonian&#39;), (&#39;eu&#39;, &#39;Basque&#39;), (&#39;fa&#39;, &#39;Persian&#39;), (&#39;fi&#39;, &#39;Finnish&#39;), (&#39;fr&#39;, &#39;French&#39;), (&#39;fy-nl&#39;, &#39;Frisian&#39;), (&#39;ga&#39;, &#39;Irish&#39;), (&#39;gl&#39;, &#39;Galician&#39;), (&#39;he&#39;, &#39;Hebrew&#39;), (&#39;hi&#39;, &#39;Hindi&#39;), (&#39;hr&#39;, &#39;Croatian&#39;), (&#39;hu&#39;, &#39;Hungarian&#39;), (&#39;ia&#39;, &#39;Interlingua&#39;), (&#39;id&#39;, &#39;Indonesian&#39;), (&#39;is&#39;, &#39;Icelandic&#39;), (&#39;it&#39;, &#39;Italian&#39;), (&#39;ja&#39;, &#39;Japanese&#39;), (&#39;ka&#39;, &#39;Georgian&#39;), (&#39;kk&#39;, &#39;Kazakh&#39;), (&#39;km&#39;, &#39;Khmer&#39;), (&#39;kn&#39;, &#39;Kannada&#39;), (&#39;ko&#39;, &#39;Korean&#39;), (&#39;lb&#39;, &#39;Luxembourgish&#39;), (&#39;lt&#39;, &#39;Lithuanian&#39;), (&#39;lv&#39;, &#39;Latvian&#39;), (&#39;mk&#39;, &#39;Macedonian&#39;), (&#39;ml&#39;, &#39;Malayalam&#39;), (&#39;mn&#39;, &#39;Mongolian&#39;), (&#39;my&#39;, &#39;Burmese&#39;), (&#39;nb&#39;, &#39;Norwegian Bokmal&#39;), (&#39;ne&#39;, &#39;Nepali&#39;), (&#39;nl&#39;, &#39;Dutch&#39;), (&#39;nn&#39;, &#39;Norwegian Nynorsk&#39;), (&#39;os&#39;, &#39;Ossetic&#39;), (&#39;pa&#39;, &#39;Punjabi&#39;), (&#39;pl&#39;, &#39;Polish&#39;), (&#39;pt&#39;, &#39;Portuguese&#39;), (&#39;pt-br&#39;, &#39;Brazilian Portuguese&#39;), (&#39;ro&#39;, &#39;Romanian&#39;), (&#39;ru&#39;, &#39;Russian&#39;), (&#39;sk&#39;, &#39;Slovak&#39;), (&#39;sl&#39;, &#39;Slovenian&#39;), (&#39;sq&#39;, &#39;Albanian&#39;), (&#39;sr&#39;, &#39;Serbian&#39;), (&#39;sr-latn&#39;, &#39;Serbian Latin&#39;), (&#39;sv&#39;, &#39;Swedish&#39;), (&#39;sw&#39;, &#39;Swahili&#39;), (&#39;ta&#39;, &#39;Tamil&#39;), (&#39;te&#39;, &#39;Telugu&#39;), (&#39;th&#39;, &#39;Thai&#39;), (&#39;tr&#39;, &#39;Turkish&#39;), (&#39;tt&#39;, &#39;Tatar&#39;), (&#39;udm&#39;, &#39;Udmurt&#39;), (&#39;uk&#39;, &#39;Ukrainian&#39;), (&#39;ur&#39;, &#39;Urdu&#39;), (&#39;vi&#39;, &#39;Vietnamese&#39;), (&#39;zh-cn&#39;, &#39;Simplified Chinese&#39;), (&#39;zh-tw&#39;, &#39;Traditional Chinese&#39;)), u&#39;LANGUAGE_BIDI&#39;: False, u&#39;LANGUAGE_CODE&#39;: &#39;en-us&#39;}, {u&#39;MEDIA_URL&#39;: &#39;&#39;}, {u&#39;STATIC_URL&#39;: &#39;/static/&#39;}, {u&#39;TIME_ZONE&#39;: &#39;UTC&#39;}, {&#39;messages&#39;: &lt;django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f4fb4a910d0&gt;}]</pre></td>
                   </tr>
                 
                   <tr>
                     <td>kwargs</td>
-                    <td class="code"><pre>{&#39;context_instance&#39;: [{&#39;False&#39;: False, &#39;None&#39;: None, &#39;True&#39;: True}, {u&#39;csrf_token&#39;: &lt;django.utils.functional.__proxy__ object at 0x7f75204cf150&gt;}, {&#39;perms&#39;: &lt;django.contrib.auth.context_processors.PermWrapper object at 0x7f75204cf290&gt;, &#39;user&#39;: &lt;SimpleLazyObject: &lt;function &lt;lambda&gt; at 0x7f7520661e60&gt;&gt;}, {}, {u&#39;LANGUAGES&#39;: ((&#39;af&#39;, &#39;Afrikaans&#39;), (&#39;ar&#39;, &#39;Arabic&#39;), (&#39;az&#39;, &#39;Azerbaijani&#39;), (&#39;bg&#39;, &#39;Bulgarian&#39;), (&#39;be&#39;, &#39;Belarusian&#39;), (&#39;bn&#39;, &#39;Bengali&#39;), (&#39;br&#39;, &#39;Breton&#39;), (&#39;bs&#39;, &#39;Bosnian&#39;), (&#39;ca&#39;, &#39;Catalan&#39;), (&#39;cs&#39;, &#39;Czech&#39;), (&#39;cy&#39;, &#39;Welsh&#39;), (&#39;da&#39;, &#39;Danish&#39;), (&#39;de&#39;, &#39;German&#39;), (&#39;el&#39;, &#39;Greek&#39;), (&#39;en&#39;, &#39;English&#39;), (&#39;en-gb&#39;, &#39;British English&#39;), (&#39;eo&#39;, &#39;Esperanto&#39;), (&#39;es&#39;, &#39;Spanish&#39;), (&#39;es-ar&#39;, &#39;Argentinian Spanish&#39;), (&#39;es-mx&#39;, &#39;Mexican Spanish&#39;), (&#39;es-ni&#39;, &#39;Nicaraguan Spanish&#39;), (&#39;es-ve&#39;, &#39;Venezuelan Spanish&#39;), (&#39;et&#39;, &#39;Estonian&#39;), (&#39;eu&#39;, &#39;Basque&#39;), (&#39;fa&#39;, &#39;Persian&#39;), (&#39;fi&#39;, &#39;Finnish&#39;), (&#39;fr&#39;, &#39;French&#39;), (&#39;fy-nl&#39;, &#39;Frisian&#39;), (&#39;ga&#39;, &#39;Irish&#39;), (&#39;gl&#39;, &#39;Galician&#39;), (&#39;he&#39;, &#39;Hebrew&#39;), (&#39;hi&#39;, &#39;Hindi&#39;), (&#39;hr&#39;, &#39;Croatian&#39;), (&#39;hu&#39;, &#39;Hungarian&#39;), (&#39;ia&#39;, &#39;Interlingua&#39;), (&#39;id&#39;, &#39;Indonesian&#39;), (&#39;is&#39;, &#39;Icelandic&#39;), (&#39;it&#39;, &#39;Italian&#39;), (&#39;ja&#39;, &#39;Japanese&#39;), (&#39;ka&#39;, &#39;Georgian&#39;), (&#39;kk&#39;, &#39;Kazakh&#39;), (&#39;km&#39;, &#39;Khmer&#39;), (&#39;kn&#39;, &#39;Kannada&#39;), (&#39;ko&#39;, &#39;Korean&#39;), (&#39;lb&#39;, &#39;Luxembourgish&#39;), (&#39;lt&#39;, &#39;Lithuanian&#39;), (&#39;lv&#39;, &#39;Latvian&#39;), (&#39;mk&#39;, &#39;Macedonian&#39;), (&#39;ml&#39;, &#39;Malayalam&#39;), (&#39;mn&#39;, &#39;Mongolian&#39;), (&#39;my&#39;, &#39;Burmese&#39;), (&#39;nb&#39;, &#39;Norwegian Bokmal&#39;), (&#39;ne&#39;, &#39;Nepali&#39;), (&#39;nl&#39;, &#39;Dutch&#39;), (&#39;nn&#39;, &#39;Norwegian Nynorsk&#39;), (&#39;os&#39;, &#39;Ossetic&#39;), (&#39;pa&#39;, &#39;Punjabi&#39;), (&#39;pl&#39;, &#39;Polish&#39;), (&#39;pt&#39;, &#39;Portuguese&#39;), (&#39;pt-br&#39;, &#39;Brazilian Portuguese&#39;), (&#39;ro&#39;, &#39;Romanian&#39;), (&#39;ru&#39;, &#39;Russian&#39;), (&#39;sk&#39;, &#39;Slovak&#39;), (&#39;sl&#39;, &#39;Slovenian&#39;), (&#39;sq&#39;, &#39;Albanian&#39;), (&#39;sr&#39;, &#39;Serbian&#39;), (&#39;sr-latn&#39;, &#39;Serbian Latin&#39;), (&#39;sv&#39;, &#39;Swedish&#39;), (&#39;sw&#39;, &#39;Swahili&#39;), (&#39;ta&#39;, &#39;Tamil&#39;), (&#39;te&#39;, &#39;Telugu&#39;), (&#39;th&#39;, &#39;Thai&#39;), (&#39;tr&#39;, &#39;Turkish&#39;), (&#39;tt&#39;, &#39;Tatar&#39;), (&#39;udm&#39;, &#39;Udmurt&#39;), (&#39;uk&#39;, &#39;Ukrainian&#39;), (&#39;ur&#39;, &#39;Urdu&#39;), (&#39;vi&#39;, &#39;Vietnamese&#39;), (&#39;zh-cn&#39;, &#39;Simplified Chinese&#39;), (&#39;zh-tw&#39;, &#39;Traditional Chinese&#39;)), u&#39;LANGUAGE_BIDI&#39;: False, u&#39;LANGUAGE_CODE&#39;: &#39;en-us&#39;}, {u&#39;MEDIA_URL&#39;: &#39;&#39;}, {u&#39;STATIC_URL&#39;: &#39;/static/&#39;}, {u&#39;TIME_ZONE&#39;: &#39;UTC&#39;}, {&#39;messages&#39;: &lt;django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f75205f23d0&gt;}]}</pre></td>
+                    <td class="code"><pre>{&#39;context_instance&#39;: [{&#39;False&#39;: False, &#39;None&#39;: None, &#39;True&#39;: True}, {u&#39;csrf_token&#39;: &lt;django.utils.functional.__proxy__ object at 0x7f4fb48d94d0&gt;}, {&#39;perms&#39;: &lt;django.contrib.auth.context_processors.PermWrapper object at 0x7f4fb48d9610&gt;, &#39;user&#39;: &lt;SimpleLazyObject: &lt;function &lt;lambda&gt; at 0x7f4fb4a81a28&gt;&gt;}, {}, {u&#39;LANGUAGES&#39;: ((&#39;af&#39;, &#39;Afrikaans&#39;), (&#39;ar&#39;, &#39;Arabic&#39;), (&#39;az&#39;, &#39;Azerbaijani&#39;), (&#39;bg&#39;, &#39;Bulgarian&#39;), (&#39;be&#39;, &#39;Belarusian&#39;), (&#39;bn&#39;, &#39;Bengali&#39;), (&#39;br&#39;, &#39;Breton&#39;), (&#39;bs&#39;, &#39;Bosnian&#39;), (&#39;ca&#39;, &#39;Catalan&#39;), (&#39;cs&#39;, &#39;Czech&#39;), (&#39;cy&#39;, &#39;Welsh&#39;), (&#39;da&#39;, &#39;Danish&#39;), (&#39;de&#39;, &#39;German&#39;), (&#39;el&#39;, &#39;Greek&#39;), (&#39;en&#39;, &#39;English&#39;), (&#39;en-gb&#39;, &#39;British English&#39;), (&#39;eo&#39;, &#39;Esperanto&#39;), (&#39;es&#39;, &#39;Spanish&#39;), (&#39;es-ar&#39;, &#39;Argentinian Spanish&#39;), (&#39;es-mx&#39;, &#39;Mexican Spanish&#39;), (&#39;es-ni&#39;, &#39;Nicaraguan Spanish&#39;), (&#39;es-ve&#39;, &#39;Venezuelan Spanish&#39;), (&#39;et&#39;, &#39;Estonian&#39;), (&#39;eu&#39;, &#39;Basque&#39;), (&#39;fa&#39;, &#39;Persian&#39;), (&#39;fi&#39;, &#39;Finnish&#39;), (&#39;fr&#39;, &#39;French&#39;), (&#39;fy-nl&#39;, &#39;Frisian&#39;), (&#39;ga&#39;, &#39;Irish&#39;), (&#39;gl&#39;, &#39;Galician&#39;), (&#39;he&#39;, &#39;Hebrew&#39;), (&#39;hi&#39;, &#39;Hindi&#39;), (&#39;hr&#39;, &#39;Croatian&#39;), (&#39;hu&#39;, &#39;Hungarian&#39;), (&#39;ia&#39;, &#39;Interlingua&#39;), (&#39;id&#39;, &#39;Indonesian&#39;), (&#39;is&#39;, &#39;Icelandic&#39;), (&#39;it&#39;, &#39;Italian&#39;), (&#39;ja&#39;, &#39;Japanese&#39;), (&#39;ka&#39;, &#39;Georgian&#39;), (&#39;kk&#39;, &#39;Kazakh&#39;), (&#39;km&#39;, &#39;Khmer&#39;), (&#39;kn&#39;, &#39;Kannada&#39;), (&#39;ko&#39;, &#39;Korean&#39;), (&#39;lb&#39;, &#39;Luxembourgish&#39;), (&#39;lt&#39;, &#39;Lithuanian&#39;), (&#39;lv&#39;, &#39;Latvian&#39;), (&#39;mk&#39;, &#39;Macedonian&#39;), (&#39;ml&#39;, &#39;Malayalam&#39;), (&#39;mn&#39;, &#39;Mongolian&#39;), (&#39;my&#39;, &#39;Burmese&#39;), (&#39;nb&#39;, &#39;Norwegian Bokmal&#39;), (&#39;ne&#39;, &#39;Nepali&#39;), (&#39;nl&#39;, &#39;Dutch&#39;), (&#39;nn&#39;, &#39;Norwegian Nynorsk&#39;), (&#39;os&#39;, &#39;Ossetic&#39;), (&#39;pa&#39;, &#39;Punjabi&#39;), (&#39;pl&#39;, &#39;Polish&#39;), (&#39;pt&#39;, &#39;Portuguese&#39;), (&#39;pt-br&#39;, &#39;Brazilian Portuguese&#39;), (&#39;ro&#39;, &#39;Romanian&#39;), (&#39;ru&#39;, &#39;Russian&#39;), (&#39;sk&#39;, &#39;Slovak&#39;), (&#39;sl&#39;, &#39;Slovenian&#39;), (&#39;sq&#39;, &#39;Albanian&#39;), (&#39;sr&#39;, &#39;Serbian&#39;), (&#39;sr-latn&#39;, &#39;Serbian Latin&#39;), (&#39;sv&#39;, &#39;Swedish&#39;), (&#39;sw&#39;, &#39;Swahili&#39;), (&#39;ta&#39;, &#39;Tamil&#39;), (&#39;te&#39;, &#39;Telugu&#39;), (&#39;th&#39;, &#39;Thai&#39;), (&#39;tr&#39;, &#39;Turkish&#39;), (&#39;tt&#39;, &#39;Tatar&#39;), (&#39;udm&#39;, &#39;Udmurt&#39;), (&#39;uk&#39;, &#39;Ukrainian&#39;), (&#39;ur&#39;, &#39;Urdu&#39;), (&#39;vi&#39;, &#39;Vietnamese&#39;), (&#39;zh-cn&#39;, &#39;Simplified Chinese&#39;), (&#39;zh-tw&#39;, &#39;Traditional Chinese&#39;)), u&#39;LANGUAGE_BIDI&#39;: False, u&#39;LANGUAGE_CODE&#39;: &#39;en-us&#39;}, {u&#39;MEDIA_URL&#39;: &#39;&#39;}, {u&#39;STATIC_URL&#39;: &#39;/static/&#39;}, {u&#39;TIME_ZONE&#39;: &#39;UTC&#39;}, {&#39;messages&#39;: &lt;django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f4fb4a910d0&gt;}]}</pre></td>
                   </tr>
                 
               </tbody>
@@ -440,13 +440,13 @@
           <code>/usr/lib/python2.7/dist-packages/django/template/loader.py</code> in <code>render_to_string</code>
 
           
-            <div class="context" id="c140141029829232">
+            <div class="context" id="c139980308342832">
               
-                <ol start="155" class="pre-context" id="pre140141029829232"><li onclick="toggle('pre140141029829232', 'post140141029829232')"><pre>    get_template, or it may be a tuple to use select_template to find one of</pre></li><li onclick="toggle('pre140141029829232', 'post140141029829232')"><pre>    the templates in the list. Returns a string.</pre></li><li onclick="toggle('pre140141029829232', 'post140141029829232')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre140141029829232', 'post140141029829232')"><pre>    dictionary = dictionary or {}</pre></li><li onclick="toggle('pre140141029829232', 'post140141029829232')"><pre>    if isinstance(template_name, (list, tuple)):</pre></li><li onclick="toggle('pre140141029829232', 'post140141029829232')"><pre>        t = select_template(template_name)</pre></li><li onclick="toggle('pre140141029829232', 'post140141029829232')"><pre>    else:</pre></li></ol>
+                <ol start="155" class="pre-context" id="pre139980308342832"><li onclick="toggle('pre139980308342832', 'post139980308342832')"><pre>    get_template, or it may be a tuple to use select_template to find one of</pre></li><li onclick="toggle('pre139980308342832', 'post139980308342832')"><pre>    the templates in the list. Returns a string.</pre></li><li onclick="toggle('pre139980308342832', 'post139980308342832')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre139980308342832', 'post139980308342832')"><pre>    dictionary = dictionary or {}</pre></li><li onclick="toggle('pre139980308342832', 'post139980308342832')"><pre>    if isinstance(template_name, (list, tuple)):</pre></li><li onclick="toggle('pre139980308342832', 'post139980308342832')"><pre>        t = select_template(template_name)</pre></li><li onclick="toggle('pre139980308342832', 'post139980308342832')"><pre>    else:</pre></li></ol>
               
-              <ol start="162" class="context-line"><li onclick="toggle('pre140141029829232', 'post140141029829232')"><pre>        t = get_template(template_name)</pre> <span>...</span></li></ol>
+              <ol start="162" class="context-line"><li onclick="toggle('pre139980308342832', 'post139980308342832')"><pre>        t = get_template(template_name)</pre> <span>...</span></li></ol>
               
-                <ol start='163' class="post-context" id="post140141029829232"><li onclick="toggle('pre140141029829232', 'post140141029829232')"><pre>    if not context_instance:</pre></li><li onclick="toggle('pre140141029829232', 'post140141029829232')"><pre>        return t.render(Context(dictionary))</pre></li><li onclick="toggle('pre140141029829232', 'post140141029829232')"><pre>    # Add the dictionary to the context stack, ensuring it gets removed again</pre></li><li onclick="toggle('pre140141029829232', 'post140141029829232')"><pre>    # to keep the context_instance in the same state it started in.</pre></li><li onclick="toggle('pre140141029829232', 'post140141029829232')"><pre>    context_instance.update(dictionary)</pre></li><li onclick="toggle('pre140141029829232', 'post140141029829232')"><pre>    try:</pre></li></ol>
+                <ol start='163' class="post-context" id="post139980308342832"><li onclick="toggle('pre139980308342832', 'post139980308342832')"><pre>    if not context_instance:</pre></li><li onclick="toggle('pre139980308342832', 'post139980308342832')"><pre>        return t.render(Context(dictionary))</pre></li><li onclick="toggle('pre139980308342832', 'post139980308342832')"><pre>    # Add the dictionary to the context stack, ensuring it gets removed again</pre></li><li onclick="toggle('pre139980308342832', 'post139980308342832')"><pre>    # to keep the context_instance in the same state it started in.</pre></li><li onclick="toggle('pre139980308342832', 'post139980308342832')"><pre>    context_instance.update(dictionary)</pre></li><li onclick="toggle('pre139980308342832', 'post139980308342832')"><pre>    try:</pre></li></ol>
               
             </div>
           
@@ -454,10 +454,10 @@
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '140141029829232')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '139980308342832')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v140141029829232">
+            <table class="vars" id="v139980308342832">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -473,14 +473,14 @@
                 
                   <tr>
                     <td>context_instance</td>
-                    <td class="code"><pre>[{&#39;False&#39;: False, &#39;None&#39;: None, &#39;True&#39;: True}, {u&#39;csrf_token&#39;: &lt;django.utils.functional.__proxy__ object at 0x7f75204cf150&gt;}, {&#39;perms&#39;: &lt;django.contrib.auth.context_processors.PermWrapper object at 0x7f75204cf290&gt;, &#39;user&#39;: &lt;SimpleLazyObject: &lt;function &lt;lambda&gt; at 0x7f7520661e60&gt;&gt;}, {}, {u&#39;LANGUAGES&#39;: ((&#39;af&#39;, &#39;Afrikaans&#39;), (&#39;ar&#39;, &#39;Arabic&#39;), (&#39;az&#39;, &#39;Azerbaijani&#39;), (&#39;bg&#39;, &#39;Bulgarian&#39;), (&#39;be&#39;, &#39;Belarusian&#39;), (&#39;bn&#39;, &#39;Bengali&#39;), (&#39;br&#39;, &#39;Breton&#39;), (&#39;bs&#39;, &#39;Bosnian&#39;), (&#39;ca&#39;, &#39;Catalan&#39;), (&#39;cs&#39;, &#39;Czech&#39;), (&#39;cy&#39;, &#39;Welsh&#39;), (&#39;da&#39;, &#39;Danish&#39;), (&#39;de&#39;, &#39;German&#39;), (&#39;el&#39;, &#39;Greek&#39;), (&#39;en&#39;, &#39;English&#39;), (&#39;en-gb&#39;, &#39;British English&#39;), (&#39;eo&#39;, &#39;Esperanto&#39;), (&#39;es&#39;, &#39;Spanish&#39;), (&#39;es-ar&#39;, &#39;Argentinian Spanish&#39;), (&#39;es-mx&#39;, &#39;Mexican Spanish&#39;), (&#39;es-ni&#39;, &#39;Nicaraguan Spanish&#39;), (&#39;es-ve&#39;, &#39;Venezuelan Spanish&#39;), (&#39;et&#39;, &#39;Estonian&#39;), (&#39;eu&#39;, &#39;Basque&#39;), (&#39;fa&#39;, &#39;Persian&#39;), (&#39;fi&#39;, &#39;Finnish&#39;), (&#39;fr&#39;, &#39;French&#39;), (&#39;fy-nl&#39;, &#39;Frisian&#39;), (&#39;ga&#39;, &#39;Irish&#39;), (&#39;gl&#39;, &#39;Galician&#39;), (&#39;he&#39;, &#39;Hebrew&#39;), (&#39;hi&#39;, &#39;Hindi&#39;), (&#39;hr&#39;, &#39;Croatian&#39;), (&#39;hu&#39;, &#39;Hungarian&#39;), (&#39;ia&#39;, &#39;Interlingua&#39;), (&#39;id&#39;, &#39;Indonesian&#39;), (&#39;is&#39;, &#39;Icelandic&#39;), (&#39;it&#39;, &#39;Italian&#39;), (&#39;ja&#39;, &#39;Japanese&#39;), (&#39;ka&#39;, &#39;Georgian&#39;), (&#39;kk&#39;, &#39;Kazakh&#39;), (&#39;km&#39;, &#39;Khmer&#39;), (&#39;kn&#39;, &#39;Kannada&#39;), (&#39;ko&#39;, &#39;Korean&#39;), (&#39;lb&#39;, &#39;Luxembourgish&#39;), (&#39;lt&#39;, &#39;Lithuanian&#39;), (&#39;lv&#39;, &#39;Latvian&#39;), (&#39;mk&#39;, &#39;Macedonian&#39;), (&#39;ml&#39;, &#39;Malayalam&#39;), (&#39;mn&#39;, &#39;Mongolian&#39;), (&#39;my&#39;, &#39;Burmese&#39;), (&#39;nb&#39;, &#39;Norwegian Bokmal&#39;), (&#39;ne&#39;, &#39;Nepali&#39;), (&#39;nl&#39;, &#39;Dutch&#39;), (&#39;nn&#39;, &#39;Norwegian Nynorsk&#39;), (&#39;os&#39;, &#39;Ossetic&#39;), (&#39;pa&#39;, &#39;Punjabi&#39;), (&#39;pl&#39;, &#39;Polish&#39;), (&#39;pt&#39;, &#39;Portuguese&#39;), (&#39;pt-br&#39;, &#39;Brazilian Portuguese&#39;), (&#39;ro&#39;, &#39;Romanian&#39;), (&#39;ru&#39;, &#39;Russian&#39;), (&#39;sk&#39;, &#39;Slovak&#39;), (&#39;sl&#39;, &#39;Slovenian&#39;), (&#39;sq&#39;, &#39;Albanian&#39;), (&#39;sr&#39;, &#39;Serbian&#39;), (&#39;sr-latn&#39;, &#39;Serbian Latin&#39;), (&#39;sv&#39;, &#39;Swedish&#39;), (&#39;sw&#39;, &#39;Swahili&#39;), (&#39;ta&#39;, &#39;Tamil&#39;), (&#39;te&#39;, &#39;Telugu&#39;), (&#39;th&#39;, &#39;Thai&#39;), (&#39;tr&#39;, &#39;Turkish&#39;), (&#39;tt&#39;, &#39;Tatar&#39;), (&#39;udm&#39;, &#39;Udmurt&#39;), (&#39;uk&#39;, &#39;Ukrainian&#39;), (&#39;ur&#39;, &#39;Urdu&#39;), (&#39;vi&#39;, &#39;Vietnamese&#39;), (&#39;zh-cn&#39;, &#39;Simplified Chinese&#39;), (&#39;zh-tw&#39;, &#39;Traditional Chinese&#39;)), u&#39;LANGUAGE_BIDI&#39;: False, u&#39;LANGUAGE_CODE&#39;: &#39;en-us&#39;}, {u&#39;MEDIA_URL&#39;: &#39;&#39;}, {u&#39;STATIC_URL&#39;: &#39;/static/&#39;}, {u&#39;TIME_ZONE&#39;: &#39;UTC&#39;}, {&#39;messages&#39;: &lt;django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f75205f23d0&gt;}]</pre></td>
+                    <td class="code"><pre>[{&#39;False&#39;: False, &#39;None&#39;: None, &#39;True&#39;: True}, {u&#39;csrf_token&#39;: &lt;django.utils.functional.__proxy__ object at 0x7f4fb48d94d0&gt;}, {&#39;perms&#39;: &lt;django.contrib.auth.context_processors.PermWrapper object at 0x7f4fb48d9610&gt;, &#39;user&#39;: &lt;SimpleLazyObject: &lt;function &lt;lambda&gt; at 0x7f4fb4a81a28&gt;&gt;}, {}, {u&#39;LANGUAGES&#39;: ((&#39;af&#39;, &#39;Afrikaans&#39;), (&#39;ar&#39;, &#39;Arabic&#39;), (&#39;az&#39;, &#39;Azerbaijani&#39;), (&#39;bg&#39;, &#39;Bulgarian&#39;), (&#39;be&#39;, &#39;Belarusian&#39;), (&#39;bn&#39;, &#39;Bengali&#39;), (&#39;br&#39;, &#39;Breton&#39;), (&#39;bs&#39;, &#39;Bosnian&#39;), (&#39;ca&#39;, &#39;Catalan&#39;), (&#39;cs&#39;, &#39;Czech&#39;), (&#39;cy&#39;, &#39;Welsh&#39;), (&#39;da&#39;, &#39;Danish&#39;), (&#39;de&#39;, &#39;German&#39;), (&#39;el&#39;, &#39;Greek&#39;), (&#39;en&#39;, &#39;English&#39;), (&#39;en-gb&#39;, &#39;British English&#39;), (&#39;eo&#39;, &#39;Esperanto&#39;), (&#39;es&#39;, &#39;Spanish&#39;), (&#39;es-ar&#39;, &#39;Argentinian Spanish&#39;), (&#39;es-mx&#39;, &#39;Mexican Spanish&#39;), (&#39;es-ni&#39;, &#39;Nicaraguan Spanish&#39;), (&#39;es-ve&#39;, &#39;Venezuelan Spanish&#39;), (&#39;et&#39;, &#39;Estonian&#39;), (&#39;eu&#39;, &#39;Basque&#39;), (&#39;fa&#39;, &#39;Persian&#39;), (&#39;fi&#39;, &#39;Finnish&#39;), (&#39;fr&#39;, &#39;French&#39;), (&#39;fy-nl&#39;, &#39;Frisian&#39;), (&#39;ga&#39;, &#39;Irish&#39;), (&#39;gl&#39;, &#39;Galician&#39;), (&#39;he&#39;, &#39;Hebrew&#39;), (&#39;hi&#39;, &#39;Hindi&#39;), (&#39;hr&#39;, &#39;Croatian&#39;), (&#39;hu&#39;, &#39;Hungarian&#39;), (&#39;ia&#39;, &#39;Interlingua&#39;), (&#39;id&#39;, &#39;Indonesian&#39;), (&#39;is&#39;, &#39;Icelandic&#39;), (&#39;it&#39;, &#39;Italian&#39;), (&#39;ja&#39;, &#39;Japanese&#39;), (&#39;ka&#39;, &#39;Georgian&#39;), (&#39;kk&#39;, &#39;Kazakh&#39;), (&#39;km&#39;, &#39;Khmer&#39;), (&#39;kn&#39;, &#39;Kannada&#39;), (&#39;ko&#39;, &#39;Korean&#39;), (&#39;lb&#39;, &#39;Luxembourgish&#39;), (&#39;lt&#39;, &#39;Lithuanian&#39;), (&#39;lv&#39;, &#39;Latvian&#39;), (&#39;mk&#39;, &#39;Macedonian&#39;), (&#39;ml&#39;, &#39;Malayalam&#39;), (&#39;mn&#39;, &#39;Mongolian&#39;), (&#39;my&#39;, &#39;Burmese&#39;), (&#39;nb&#39;, &#39;Norwegian Bokmal&#39;), (&#39;ne&#39;, &#39;Nepali&#39;), (&#39;nl&#39;, &#39;Dutch&#39;), (&#39;nn&#39;, &#39;Norwegian Nynorsk&#39;), (&#39;os&#39;, &#39;Ossetic&#39;), (&#39;pa&#39;, &#39;Punjabi&#39;), (&#39;pl&#39;, &#39;Polish&#39;), (&#39;pt&#39;, &#39;Portuguese&#39;), (&#39;pt-br&#39;, &#39;Brazilian Portuguese&#39;), (&#39;ro&#39;, &#39;Romanian&#39;), (&#39;ru&#39;, &#39;Russian&#39;), (&#39;sk&#39;, &#39;Slovak&#39;), (&#39;sl&#39;, &#39;Slovenian&#39;), (&#39;sq&#39;, &#39;Albanian&#39;), (&#39;sr&#39;, &#39;Serbian&#39;), (&#39;sr-latn&#39;, &#39;Serbian Latin&#39;), (&#39;sv&#39;, &#39;Swedish&#39;), (&#39;sw&#39;, &#39;Swahili&#39;), (&#39;ta&#39;, &#39;Tamil&#39;), (&#39;te&#39;, &#39;Telugu&#39;), (&#39;th&#39;, &#39;Thai&#39;), (&#39;tr&#39;, &#39;Turkish&#39;), (&#39;tt&#39;, &#39;Tatar&#39;), (&#39;udm&#39;, &#39;Udmurt&#39;), (&#39;uk&#39;, &#39;Ukrainian&#39;), (&#39;ur&#39;, &#39;Urdu&#39;), (&#39;vi&#39;, &#39;Vietnamese&#39;), (&#39;zh-cn&#39;, &#39;Simplified Chinese&#39;), (&#39;zh-tw&#39;, &#39;Traditional Chinese&#39;)), u&#39;LANGUAGE_BIDI&#39;: False, u&#39;LANGUAGE_CODE&#39;: &#39;en-us&#39;}, {u&#39;MEDIA_URL&#39;: &#39;&#39;}, {u&#39;STATIC_URL&#39;: &#39;/static/&#39;}, {u&#39;TIME_ZONE&#39;: &#39;UTC&#39;}, {&#39;messages&#39;: &lt;django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f4fb4a910d0&gt;}]</pre></td>
                   </tr>
                 
                   <tr>
                     <td>dictionary</td>
-                    <td class="code"><pre>{&#39;page&#39;: &lt;Page 1 of 1&gt;,
- &#39;paginator&#39;: &lt;django.core.paginator.Paginator object at 0x7f75205182d0&gt;,
- &#39;questions&#39;: []}</pre></td>
+                    <td class="code"><pre>{&#39;page&#39;: &lt;Page 1 of 4&gt;,
+ &#39;paginator&#39;: &lt;django.core.paginator.Paginator object at 0x7f4fb4923dd0&gt;,
+ &#39;questions&#39;: [&lt;Question: question about pi&gt;, &lt;Question: question last&gt;, &lt;Question: question 29&gt;, &lt;Question: question 28&gt;, &lt;Question: question 27&gt;, &lt;Question: question 26&gt;, &lt;Question: question 25&gt;, &lt;Question: question 24&gt;, &lt;Question: question 23&gt;, &lt;Question: question 22&gt;]}</pre></td>
                   </tr>
                 
               </tbody>
@@ -492,13 +492,13 @@
           <code>/usr/lib/python2.7/dist-packages/django/template/loader.py</code> in <code>get_template</code>
 
           
-            <div class="context" id="c140141029829304">
+            <div class="context" id="c139980308342904">
               
-                <ol start="131" class="pre-context" id="pre140141029829304"><li onclick="toggle('pre140141029829304', 'post140141029829304')"><pre>    raise TemplateDoesNotExist(name)</pre></li><li onclick="toggle('pre140141029829304', 'post140141029829304')"><pre></pre></li><li onclick="toggle('pre140141029829304', 'post140141029829304')"><pre>def get_template(template_name):</pre></li><li onclick="toggle('pre140141029829304', 'post140141029829304')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre140141029829304', 'post140141029829304')"><pre>    Returns a compiled Template object for the given template name,</pre></li><li onclick="toggle('pre140141029829304', 'post140141029829304')"><pre>    handling template inheritance recursively.</pre></li><li onclick="toggle('pre140141029829304', 'post140141029829304')"><pre>    &quot;&quot;&quot;</pre></li></ol>
+                <ol start="131" class="pre-context" id="pre139980308342904"><li onclick="toggle('pre139980308342904', 'post139980308342904')"><pre>    raise TemplateDoesNotExist(name)</pre></li><li onclick="toggle('pre139980308342904', 'post139980308342904')"><pre></pre></li><li onclick="toggle('pre139980308342904', 'post139980308342904')"><pre>def get_template(template_name):</pre></li><li onclick="toggle('pre139980308342904', 'post139980308342904')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre139980308342904', 'post139980308342904')"><pre>    Returns a compiled Template object for the given template name,</pre></li><li onclick="toggle('pre139980308342904', 'post139980308342904')"><pre>    handling template inheritance recursively.</pre></li><li onclick="toggle('pre139980308342904', 'post139980308342904')"><pre>    &quot;&quot;&quot;</pre></li></ol>
               
-              <ol start="138" class="context-line"><li onclick="toggle('pre140141029829304', 'post140141029829304')"><pre>    template, origin = find_template(template_name)</pre> <span>...</span></li></ol>
+              <ol start="138" class="context-line"><li onclick="toggle('pre139980308342904', 'post139980308342904')"><pre>    template, origin = find_template(template_name)</pre> <span>...</span></li></ol>
               
-                <ol start='139' class="post-context" id="post140141029829304"><li onclick="toggle('pre140141029829304', 'post140141029829304')"><pre>    if not hasattr(template, &#39;render&#39;):</pre></li><li onclick="toggle('pre140141029829304', 'post140141029829304')"><pre>        # template needs to be compiled</pre></li><li onclick="toggle('pre140141029829304', 'post140141029829304')"><pre>        template = get_template_from_string(template, origin, template_name)</pre></li><li onclick="toggle('pre140141029829304', 'post140141029829304')"><pre>    return template</pre></li><li onclick="toggle('pre140141029829304', 'post140141029829304')"><pre></pre></li><li onclick="toggle('pre140141029829304', 'post140141029829304')"><pre>def get_template_from_string(source, origin=None, name=None):</pre></li></ol>
+                <ol start='139' class="post-context" id="post139980308342904"><li onclick="toggle('pre139980308342904', 'post139980308342904')"><pre>    if not hasattr(template, &#39;render&#39;):</pre></li><li onclick="toggle('pre139980308342904', 'post139980308342904')"><pre>        # template needs to be compiled</pre></li><li onclick="toggle('pre139980308342904', 'post139980308342904')"><pre>        template = get_template_from_string(template, origin, template_name)</pre></li><li onclick="toggle('pre139980308342904', 'post139980308342904')"><pre>    return template</pre></li><li onclick="toggle('pre139980308342904', 'post139980308342904')"><pre></pre></li><li onclick="toggle('pre139980308342904', 'post139980308342904')"><pre>def get_template_from_string(source, origin=None, name=None):</pre></li></ol>
               
             </div>
           
@@ -506,10 +506,10 @@
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '140141029829304')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '139980308342904')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v140141029829304">
+            <table class="vars" id="v139980308342904">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -532,13 +532,13 @@
           <code>/usr/lib/python2.7/dist-packages/django/template/loader.py</code> in <code>find_template</code>
 
           
-            <div class="context" id="c140141029829016">
+            <div class="context" id="c139980308342616">
               
-                <ol start="124" class="pre-context" id="pre140141029829016"><li onclick="toggle('pre140141029829016', 'post140141029829016')"><pre>        template_source_loaders = tuple(loaders)</pre></li><li onclick="toggle('pre140141029829016', 'post140141029829016')"><pre>    for loader in template_source_loaders:</pre></li><li onclick="toggle('pre140141029829016', 'post140141029829016')"><pre>        try:</pre></li><li onclick="toggle('pre140141029829016', 'post140141029829016')"><pre>            source, display_name = loader(name, dirs)</pre></li><li onclick="toggle('pre140141029829016', 'post140141029829016')"><pre>            return (source, make_origin(display_name, loader, name, dirs))</pre></li><li onclick="toggle('pre140141029829016', 'post140141029829016')"><pre>        except TemplateDoesNotExist:</pre></li><li onclick="toggle('pre140141029829016', 'post140141029829016')"><pre>            pass</pre></li></ol>
+                <ol start="124" class="pre-context" id="pre139980308342616"><li onclick="toggle('pre139980308342616', 'post139980308342616')"><pre>        template_source_loaders = tuple(loaders)</pre></li><li onclick="toggle('pre139980308342616', 'post139980308342616')"><pre>    for loader in template_source_loaders:</pre></li><li onclick="toggle('pre139980308342616', 'post139980308342616')"><pre>        try:</pre></li><li onclick="toggle('pre139980308342616', 'post139980308342616')"><pre>            source, display_name = loader(name, dirs)</pre></li><li onclick="toggle('pre139980308342616', 'post139980308342616')"><pre>            return (source, make_origin(display_name, loader, name, dirs))</pre></li><li onclick="toggle('pre139980308342616', 'post139980308342616')"><pre>        except TemplateDoesNotExist:</pre></li><li onclick="toggle('pre139980308342616', 'post139980308342616')"><pre>            pass</pre></li></ol>
               
-              <ol start="131" class="context-line"><li onclick="toggle('pre140141029829016', 'post140141029829016')"><pre>    raise TemplateDoesNotExist(name)</pre> <span>...</span></li></ol>
+              <ol start="131" class="context-line"><li onclick="toggle('pre139980308342616', 'post139980308342616')"><pre>    raise TemplateDoesNotExist(name)</pre> <span>...</span></li></ol>
               
-                <ol start='132' class="post-context" id="post140141029829016"><li onclick="toggle('pre140141029829016', 'post140141029829016')"><pre></pre></li><li onclick="toggle('pre140141029829016', 'post140141029829016')"><pre>def get_template(template_name):</pre></li><li onclick="toggle('pre140141029829016', 'post140141029829016')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre140141029829016', 'post140141029829016')"><pre>    Returns a compiled Template object for the given template name,</pre></li><li onclick="toggle('pre140141029829016', 'post140141029829016')"><pre>    handling template inheritance recursively.</pre></li><li onclick="toggle('pre140141029829016', 'post140141029829016')"><pre>    &quot;&quot;&quot;</pre></li></ol>
+                <ol start='132' class="post-context" id="post139980308342616"><li onclick="toggle('pre139980308342616', 'post139980308342616')"><pre></pre></li><li onclick="toggle('pre139980308342616', 'post139980308342616')"><pre>def get_template(template_name):</pre></li><li onclick="toggle('pre139980308342616', 'post139980308342616')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre139980308342616', 'post139980308342616')"><pre>    Returns a compiled Template object for the given template name,</pre></li><li onclick="toggle('pre139980308342616', 'post139980308342616')"><pre>    handling template inheritance recursively.</pre></li><li onclick="toggle('pre139980308342616', 'post139980308342616')"><pre>    &quot;&quot;&quot;</pre></li></ol>
               
             </div>
           
@@ -546,10 +546,10 @@
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '140141029829016')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '139980308342616')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v140141029829016">
+            <table class="vars" id="v139980308342616">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -565,7 +565,7 @@
                 
                   <tr>
                     <td>loader</td>
-                    <td class="code"><pre>&lt;django.template.loaders.app_directories.Loader object at 0x7f75204cf790&gt;</pre></td>
+                    <td class="code"><pre>&lt;django.template.loaders.app_directories.Loader object at 0x7f4fb48d9a50&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -580,8 +580,8 @@
                 
                   <tr>
                     <td>loaders</td>
-                    <td class="code"><pre>[&lt;django.template.loaders.filesystem.Loader object at 0x7f75204cf490&gt;,
- &lt;django.template.loaders.app_directories.Loader object at 0x7f75204cf790&gt;]</pre></td>
+                    <td class="code"><pre>[&lt;django.template.loaders.filesystem.Loader object at 0x7f4fb48d9810&gt;,
+ &lt;django.template.loaders.app_directories.Loader object at 0x7f4fb48d9a50&gt;]</pre></td>
                   </tr>
                 
               </tbody>
@@ -637,7 +637,7 @@ Using loader django.template.loaders.app_directories.Loader:
 Traceback:
 File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py" in get_response
   112.                     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-File "/home/box/ask/qa/views.py" in questions_all
+File "/home/box/web/ask/qa/views.py" in questions_all
   22.         &#39;paginator&#39;: paginator, &#39;page&#39;: page})
 File "/usr/lib/python2.7/dist-packages/django/shortcuts/__init__.py" in render
   53.     return HttpResponse(loader.render_to_string(*args, **kwargs),
@@ -710,7 +710,7 @@ Exception Value: qa/all.html
       
         <tr>
           <td>wsgi.input</td>
-          <td class="code"><pre>&lt;gunicorn.http.body.Body object at 0x7f75211bc590&gt;</pre></td>
+          <td class="code"><pre>&lt;gunicorn.http.body.Body object at 0x7f4fb53695d0&gt;</pre></td>
         </tr>
       
         <tr>
@@ -755,7 +755,7 @@ Exception Value: qa/all.html
       
         <tr>
           <td>REMOTE_PORT</td>
-          <td class="code"><pre>&#39;55643&#39;</pre></td>
+          <td class="code"><pre>&#39;52667&#39;</pre></td>
         </tr>
       
         <tr>
@@ -775,7 +775,7 @@ Exception Value: qa/all.html
       
         <tr>
           <td>wsgi.errors</td>
-          <td class="code"><pre>&lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f7524a691e0&gt;</pre></td>
+          <td class="code"><pre>&lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f4fb8c161e0&gt;</pre></td>
         </tr>
       
         <tr>
@@ -790,7 +790,7 @@ Exception Value: qa/all.html
       
         <tr>
           <td>gunicorn.socket</td>
-          <td class="code"><pre>&lt;socket._socketobject object at 0x7f75212a8590&gt;</pre></td>
+          <td class="code"><pre>&lt;socket._socketobject object at 0x7f4fb5455590&gt;</pre></td>
         </tr>
       
         <tr>
@@ -810,7 +810,7 @@ Exception Value: qa/all.html
       
         <tr>
           <td>CSRF_COOKIE</td>
-          <td class="code"><pre>u&#39;wow72qLwJOcQpcJiVhPYnnPnKwKUQ2s4&#39;</pre></td>
+          <td class="code"><pre>u&#39;8tHmaNb5h58KOhlnGB2vuPiu5Ygihad9&#39;</pre></td>
         </tr>
       
     </tbody>
@@ -860,7 +860,7 @@ Exception Value: qa/all.html
       
         <tr>
           <td>BASE_DIR</td>
-          <td class="code"><pre>&#39;/home/box/ask&#39;</pre></td>
+          <td class="code"><pre>&#39;/home/box/web/ask&#39;</pre></td>
         </tr>
       
         <tr>
@@ -934,18 +934,18 @@ Exception Value: qa/all.html
           <td class="code"><pre>{&#39;default&#39;: {&#39;ATOMIC_REQUESTS&#39;: False,
              &#39;AUTOCOMMIT&#39;: True,
              &#39;CONN_MAX_AGE&#39;: 0,
-             &#39;ENGINE&#39;: &#39;django.db.backends.mysql&#39;,
-             &#39;HOST&#39;: &#39;127.0.0.1&#39;,
-             &#39;NAME&#39;: &#39;qa&#39;,
+             &#39;ENGINE&#39;: &#39;django.db.backends.sqlite3&#39;,
+             &#39;HOST&#39;: &#39;&#39;,
+             &#39;NAME&#39;: &#39;/home/box/web/ask/db.sqlite3&#39;,
              &#39;OPTIONS&#39;: {},
              &#39;PASSWORD&#39;: u&#39;********************&#39;,
-             &#39;PORT&#39;: &#39;3306&#39;,
+             &#39;PORT&#39;: &#39;&#39;,
              &#39;TEST_CHARSET&#39;: None,
              &#39;TEST_COLLATION&#39;: None,
              &#39;TEST_MIRROR&#39;: None,
              &#39;TEST_NAME&#39;: None,
              &#39;TIME_ZONE&#39;: &#39;UTC&#39;,
-             &#39;USER&#39;: &#39;qa&#39;}}</pre></td>
+             &#39;USER&#39;: &#39;&#39;}}</pre></td>
         </tr>
       
         <tr>
@@ -1450,7 +1450,7 @@ Exception Value: qa/all.html
           <td>TEMPLATES</td>
           <td class="code"><pre>[{&#39;APP_DIRS&#39;: True,
   &#39;BACKEND&#39;: &#39;django.template.backends.django.DjangoTemplates&#39;,
-  &#39;DIRS&#39;: [&#39;/home/box/ask/templates&#39;],
+  &#39;DIRS&#39;: [&#39;/home/box/web/ask/templates&#39;],
   &#39;OPTIONS&#39;: {&#39;context_processors&#39;: [&#39;django.template.context_processors.debug&#39;,
                                      &#39;django.template.context_processors.request&#39;,
                                      &#39;django.contrib.auth.context_processors.auth&#39;,

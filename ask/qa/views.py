@@ -10,7 +10,7 @@ def test(request, *args, **kwargs):
     return HttpResponse('OK', status=200)
 
 def questions_all(request):
-    questions = Question.objects.order_by('-added_at')
+    questions = Question.objects.order_by('-id')
     limit = request.GET.get('limit', 10)
     page = request.GET.get('page', 1)
     paginator = Paginator(questions, limit)

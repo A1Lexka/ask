@@ -25,7 +25,7 @@ SECRET_KEY = 'q5m*7nv3g0tbcq+0g2vktj!#5cpe@4ts1sb$nuw^z@3q2b#4pn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -54,12 +54,10 @@ MIDDLEWARE_CLASSES = [
 
 ROOT_URLCONF = 'ask.urls'
 
-SETTINGS_PATH = os.path.normpath(os.path.dirname(__file__))
-PROJECT_ROOT = os.path.normpath(os.path.dirname(SETTINGS_PATH))
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates'), '/home/box/web/ask/templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -80,8 +78,12 @@ WSGI_APPLICATION = 'ask.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'qa',
+        'USER': 'qa',
+        'PASSWORD': '123456',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
