@@ -55,11 +55,11 @@ def question_details(request, question_id):
     
 def post_add(request):
     if request.methos == "POST":
-        form = AnswerForm(request.POST):
+        form = AskForm(request.POST):
         if form.is_valid():
             post = form.save()
             url = post.get_url()
             return HttpResponseRedirect(url)
     else:
         form = AskForm()
-    return render(request, '')
+    return render(request, 'question/question_id/question_add.html', {'form': form})
