@@ -53,3 +53,13 @@ def question_details(request, question_id):
         'answers': answers.all()[:],    })
 
     
+def post_add(request):
+    if request.methos == "POST":
+        form = AnswerForm(request.POST):
+        if form.is_valid():
+            post = form.save()
+            url = post.get_url()
+            return HttpResponseRedirect(url)
+    else:
+        form = AskForm()
+    return render(request, '')
