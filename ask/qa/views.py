@@ -62,4 +62,5 @@ def post_add(request):
             return HttpResponseRedirect(url)
     else:
         form = AskForm()
-    return render(request, 'question/question_id/question_add.html', {'form': form})
+    return render(request, 'question_add.html', {'form': form})
+
