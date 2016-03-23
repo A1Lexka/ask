@@ -7,7 +7,7 @@ class AskForm(forms.Form):
 
     def clean(self):
         text = self.cleaned_data['text']
-        if not is_ethic(message):
+        if not form.is_valid(text):
             raise forms.ValidationError('text is wrong', code=12)
         return text + "Thank you."
 
