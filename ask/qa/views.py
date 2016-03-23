@@ -44,32 +44,23 @@ def popular_questions(request):
 #@require_GET
 @csrf_exempt
 def question_details(request, question_id):
-#    try:
-#        question = Question.objects.get(question_id=question_id)
-#    except Question.DoesNotExist:
-#        raise Http404
-    if request.method is "POST":
-        return question_add(request, question_id)
-    else:
-        form = AnswerForm(request, question_id)
-    return render(request, 'qa/questioned.html', {'form': form})
-    
-        
-  #  question = get_object_or_404(Question, id=question_id)
-   # answers = Answer.objects.filter(question=question)
-    #return render(request, 'qa/question.html', {
-     #   'question': question,
-      #  'title': question.title,
-       # 'text': question.text,
-        #'answers': answers.all()[:],    })
+    if request.method == "POST":
+        return question_add(request)
+    form = AnswerForm(initial={'question': question_id})
+    question = get_object_or_404(Question, id=question_id)
+    answers = Answer.objects.filter(question=question)
+    return render(request, 'qa/questioned.html', {
+        'question': question,
+        'title': question.title,
+        'text': question.text,
+        'answers': answers.all()[:],
+        'form': form,
+    })
 
 @csrf_exempt    
 def question_add(request):
     if request.method == "POST":
         form = AskForm(request.POST)
-    #    form = AskForm(initial={'question': question_id})
-    #    form.is_valid()
-    #    raise BaseException(form.errors)
         if form.is_valid():
             post = form.save()
     #        url = post.get_url()
@@ -79,4 +70,23 @@ def question_add(request):
     else:
         form = AskForm()
     return render(request, 'qa/question_add.html', {'form': form})
+
+def answer(request):
+    if request.method == "POST":
+        form = AnswerForm(initial={'question': question_id})
+        return render(request, 'qa/questioned.html', {
+        'question': question,
+        'title': question.title,
+        'text': question.text,
+        'answers': answers.all()[:],
+        'form': form,
+    })
+    return HttpResponseRedirect("/poni/")         
+
+
+
+
+
+
+
 

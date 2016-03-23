@@ -35,12 +35,12 @@ class AskForm(forms.Form):
 class AnswerForm(forms.Form):
     text = forms.CharField(max_length=100)
     question = forms.IntegerField()
-
-    def clean(self):
-        text = self.cleaned_data['text']
-        if not text.is_valid():
-            raise forms.ValidationError('answer text is wrong', code=11)    
-        return text
+    hidden = forms.CharField(widget=forms.HiddenInput())
+#    def clean(self):
+#        text = self.cleaned_data['text']
+#        if not text.is_valid():
+#            raise forms.ValidationError('answer text is wrong', code=11)    
+#        return text
 
     def save(self):
         answer = Answer(**self.cleaned_data)
